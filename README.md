@@ -24,19 +24,12 @@ A web application that uses OCR (Optical Character Recognition) to extract menu 
 ## Project Structure
 
 ```
-ocr-menu-detector/
 ├── api/
 │   ├── __init__.py
 │   └── ocr.py              # Main Flask application
 ├── templates/
 │   └── index.html          # Frontend interface
-├── tests/
-│   ├── test_ocr.py         # Unit tests
-│   ├── sample_menu.jpg     # Test menu image
-│   └── multilingual_menu.jpg
-├── create_test_image.py    # Script to generate test images
 ├── requirements.txt        # Python dependencies
-├── package.json           # Node.js configuration
 ├── vercel.json           # Vercel deployment config
 └── README.md             # This file
 ```
@@ -44,17 +37,16 @@ ocr-menu-detector/
 ## 🚀 Quick Deploy to Vercel
 
 1. **Upload to GitHub**:
-   ```bash
-   python setup_git.py  # Run this script to set up Git
-   # Follow the instructions to create GitHub repository
-   ```
+   - Create a new repository on GitHub
+   - Upload all files from this folder
+   - Make repository public for free Vercel deployment
 
 2. **Deploy to Vercel**:
    - Go to [vercel.com](https://vercel.com)
    - Import your GitHub repository
    - Deploy automatically!
 
-📖 **Detailed instructions**: See [DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md)
+📖 **Detailed instructions**: See the sections below
 
 ## Installation & Setup
 
@@ -63,7 +55,7 @@ ocr-menu-detector/
 1. **Clone the repository**
    ```bash
    git clone <repository-url>
-   cd ocr-menu-detector
+   cd your-repo-name
    ```
 
 2. **Install Python dependencies**
@@ -177,19 +169,6 @@ Health check endpoint.
    - Browse extracted menu items with translations
    - View original and translated text
 
-## Testing
-
-Run the unit tests:
-
-```bash
-python -m pytest tests/
-```
-
-Or run specific test file:
-
-```bash
-python tests/test_ocr.py
-```
 
 ## Configuration
 
